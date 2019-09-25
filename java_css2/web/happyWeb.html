@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>开心网</title>
+</head>
+<style>
+    #big{
+        margin-top: 0;
+        padding: 0;
+        margin-left: 300px;
+        margin-right: 300px;
+        font-size: 13px;
+        font-family: 幼圆;
+        width: 1007px;
+
+    }
+    ul{
+
+      padding: 0;
+    }
+    #top{
+        height: 50px;
+        width: 1007px;
+        background: url("img/menuBg.jpg") repeat-x;
+    }
+    #top_left{
+        float: left;
+    }
+    #top_center{
+        float: left;
+    background: url("img/btn-01.gif");
+        height: 40px;
+        width: 100px;
+        margin-top: 10px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 17px;
+        font-weight: bold;
+        color: red;
+    }
+    #top_right>ul>li{
+        float: right;
+        text-align: center;
+        list-style: none;
+        line-height: 50px;
+        color: white;
+        width: 40px;
+    }
+    #top_right>ul>li>a{
+        font-size: 13px;
+        text-decoration: none;
+        color: white;
+    }
+    #center{
+      margin-top: 10px;
+        height: 226px;
+
+
+    }
+    #center_middle{
+        float: left;
+        border: 1px #ccc solid;
+        height: 226px;
+    }
+    #center_left{
+
+       float: left;
+        border: 1px #ccc solid;
+        margin-right: 10px;
+        width: 190px;
+        height: 226px;
+
+
+    }
+    #center_left>ol{
+        padding: 0;
+        margin: 0px;
+    }
+    #center_left>ol>li{
+
+        list-style: none;
+        background: url("img/gameBg1.jpg");
+        width: 190px;
+        height: 29px;
+        line-height: 29px;
+
+    }
+    #center_left>ol>li>a:link{
+        color: black;
+       text-decoration: none;
+    }
+    #center_left>ol>li>a:hover{
+        color:orange;
+        text-decoration: none;
+    }
+   #center_right{
+       float: left;
+       background-color: RGB(244,244,244);
+       width: 274px;
+       border: 1px #ccc solid;
+       height: 226px;
+       margin-left: 10px;
+       font-size: 15px;
+       font-weight: bold;
+    }
+    #center_right>form{
+        margin-top: 20px;
+    }
+    #center_right>form span{
+        font-size: 16px ;
+        color: RGB(139,135,139);
+    }
+    #center_right>form>table a{
+        text-decoration: none;
+        color: RGB(122,155,185);
+    }
+    #game_above{
+        width: 1007px;
+        height: 300px;
+        margin-top: 10px;
+    }
+    #above_left{
+         width: 719px ;
+        border: 1px #ccc solid;
+         height: 300px;
+
+    }
+   #all_game{
+       float: left;
+       background: url("img/titleBg.jpg") repeat-x ;
+       height: 28px;
+       line-height: 28px;
+       width: 719px;
+    }
+    #all_game>ul>li{
+        list-style: none;
+        float: left;
+        margin-top: -10px;
+        margin-right: 20px;
+    }
+
+    #all_game>ul>li a{
+        color: RGB(182,186,189);
+     }
+    #all_game>ul>li a:hover{
+        color:deepskyblue;
+    }
+
+    #long{
+        font-size: 12px;
+        margin-top: 50px;
+        margin-left: 20px;
+        float: left;
+        height:150px ;
+        width: 320px;
+        border: 1px #ccc solid;
+
+    }
+    #zheng{
+        font-size: 12px;
+        margin-top: 50px;
+        margin-right: 22px;
+        float: right;
+        height:150px ;
+        width: 320px;
+        border: 1px #ccc solid;
+    }
+
+    #above_right{
+        height:300px ;
+        width:274px ;
+        border:1px #ccc solid;
+        float:right;
+        margin-top: -303px;
+
+    }
+    #news{
+      float: left;
+      width: 274px;
+      height: 28px;
+      line-height: 28px;
+      background: url("img/titleBg.jpg") repeat-x ;
+    }
+    #news>ul>li{
+
+    list-style: none;
+    float: left;
+    margin-top: -10px;
+
+
+    }
+    .name{
+        font-size: 15px ;
+        color: red;
+        font-weight: bold;
+    }
+    .pop{
+        font-size: 14px;
+        color: red;
+    }
+.list_name{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 20px;
+}
+    #last{
+        height: 600px;
+        width: 1007px;
+
+    }
+#last_left{
+    border: 1px #ccc solid;
+    height: 420px;
+    width: 719px ;
+    margin-top: 10px;
+}
+    #left_top{
+        float: left;
+        background: url("img/titleBg.jpg") repeat-x ;
+        height: 28px;
+        line-height: 28px;
+        width: 719px;
+
+    }
+    #left_top>ul>li{
+        list-style: none;
+        float: left;
+        margin-top: -10px;
+    }
+    #right_top{
+        float: right;
+        border: 1px #ccc solid;
+        height:200px ;
+        width:274px ;
+        margin-top: -420px;
+    }
+    #right_buttom{
+        float: right;
+        border: 1px #ccc solid;
+        height: 240px;
+        width: 274px ;
+        margin-top: -242px;
+
+    }
+
+    #all_video{
+        float: right;
+        background: url("img/titleBg.jpg") repeat-x ;
+        height: 28px;
+        line-height: 28px;
+        width:274px;
+    }
+    #all_video>ul>li{
+         list-style: none;
+        float: left;
+        margin-top: -10px;
+    }
+
+    #rgp{
+        padding-left: 40px;
+        padding-top: 50px;
+
+    }
+    #rgp td{
+       padding-right: 15px; 
+    }
+    #video{
+        padding-left: 20px;
+
+    }
+    #video>table td{
+        padding-top: 10px;
+        color: blue;
+    }
+</style>
+<body>
+<div id="big">
+    <!--头部-->
+    <div id="top">
+        <!--首页左部-->
+        <div ID="top_left">
+            <img src="img/gameLogo.jpg">
+        </div>
+
+        <!--首页中部-->
+        <div ID="top_center">
+          首页
+        </div>
+        <!--首页右部-->
+        <div ID="top_right">
+            <ul>
+                <li><a href="#">更多</a></li>
+                <li><a href="#">帮助</a>|</li>
+                <li><a href="#">登录</a>|</li>
+                <li><a href="#">注册</a>|</li>
+            </ul>
+        </div>
+
+    </div>
+        <!--中部-->
+        <div id="center">
+            <!--中部左侧-->
+         <div id="center_left">
+             <ol>
+                 <li><img  src="img/sub-1.gif"><a href="#">&nbsp;侠客世界</a> </li>
+                 <li><img  src="img/sub-2.gif"><a href="#">&nbsp;征战四方</a> </li>
+                 <li><img  src="img/sub-3.gif"><a href="#">&nbsp;龙将</a></li>
+                 <li><img  src="img/sub-4.gif"><a href="#">&nbsp;弹弹堂</a> </li>
+                 <li><img  src="img/sub-5.gif"><a href="#">&nbsp;凡人修真2</a> </li>
+                 <li><img  src="img/sub-6.gif"><a href="#">&nbsp;一骑当先</a> </li>
+                 <li><img  src="img/sub-7.gif"><a href="#">&nbsp;宫廷计</a> </li>
+                 <li><img  src="img/sub-8.gif"><a href="#">&nbsp;神仙道</a></li>
+             </ol>
+         </div>
+            <!--中部中间-->
+            <div id="center_middle">
+             <img src="img/img-3.jpg">
+         </div>
+            <!--中部右侧-->
+            <div id="center_right">
+             <form >
+                 <table align="center" style="height: 170px;width: 230px">
+                     <tr >
+                       <td colspan="3"><span >开心网用户登录</span></td>
+                     </tr>
+
+                     <tr>
+                         <td>账号：</td><td colspan="2"><input type="text"></td>
+                     </tr>
+                     <tr>
+                         <td>密码：</td><td colspan="2" ><input type="password"></td>
+                     </tr>
+                     <tr>
+                         <td >&nbsp;</td> <td rowspan="2" ><img src="img/btnLogin.jpg">
+                         <td><a href="#">立即注册</a></td>
+                 </tr>
+                       <tr>
+                           <td>&nbsp;</td> <td><a href="#">忘记密码</a> </td>
+                       </tr>
+
+                 </table>
+             </form>
+         </div>
+        </div>
+
+    <div id="game_above">
+        <div id="above_left">
+    <div id="all_game">
+        <ul>
+            <li class="list_name">全部游戏</li>
+            <li><a href="#">战争策略</a>&nbsp;|</li>
+            <li><a href="#">模拟经营</a>&nbsp;|</li>
+            <li><a href="#">社交游戏</a></li>
+        </ul>
+    </div>
+            <div id="exp">
+            <div id="long">
+
+                <table>
+                    <tr><td rowspan="6"><img src="img/img-4.jpg"></td></tr>
+                    <tr><td colspan="2" class="name">龙将</td></tr>
+                    <tr><td colspan="2">三国题材横版rpg网游，丰富的武将系统</td></tr>
+                    <tr><td colspan="2">类型：角色扮演</td></tr>
+                    <tr><td colspan="2">游戏人气：<span class="pop">470921</span></td></tr>
+                    <tr><td><a href="#"><img src="img/btn-02.jpg"></a> </td><td><a href="#"><img src="img/btn-03.jpg"></a></td></tr>
+                </table>
+            </div>
+                <div id="zheng">
+                    <table>
+                        <tr>
+                            <td  rowspan="6">   <img src="img/img-5.jpg"></td>
+                        </tr>
+                        <tr><td colspan="2" class="name">征战四方</td></tr>
+                        <tr><td colspan="2">一款不建主城不等cd，不占资源，全程战斗</td></tr>
+                        <tr><td colspan="2">类型：战争策略</td></tr>
+                        <tr><td colspan="2">游戏人气：<span class="pop">8745221</span></td></tr>
+                        <tr><td><a href="#"><img src="img/btn-02.jpg"></a> </td><td><a href="#"><img src="img/btn-03.jpg"></a></td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="above_right">
+           <div id="news">
+         <ul><li class="list_name">新闻公告</li></ul>
+           </div>
+           <div>
+               <ul>
+                   <li style="border-bottom: 1px #ccc dashed ;padding-bottom: 3px;height: 28px;list-style: none;padding-top: 5px"><img src="img/btn-04.gif"> [神仙道]03月05日·玄净魔影 </li>
+               </ul>
+
+               <ul>
+                   <li style="border-bottom: 1px #ccc dashed ;padding-bottom: 3px;height: 28px;list-style: none"><img src="img/btn-04.gif"> [神仙道]03月05日·玄净魔影 </li>
+               </ul>
+
+               <ul>
+                   <li style="border-bottom: 1px #ccc dashed ;padding-bottom: 3px;height: 28px;list-style: none"><img src="img/btn-04.gif"> [神仙道]03月05日·玄净魔影 </li>
+               </ul>
+
+               <ul>
+                   <li style="border-bottom: 1px #ccc dashed ;padding-bottom: 3px;height: 28px;list-style: none"><img src="img/btn-04.gif"> [神仙道]03月05日·玄净魔影 </li>
+               </ul>
+
+               <ul>
+                   <li style="border-bottom: 1px #ccc dashed ;padding-bottom: 3px;height: 28px;list-style: none"><img src="img/btn-04.gif"> [神仙道]03月05日·玄净魔影 </li>
+               </ul>
+
+               <ul>
+                   <li style="border-bottom: 1px #ccc dashed ;padding-bottom: 3px;height: 28px;list-style: none"><img src="img/btn-04.gif"> [神仙道]03月05日·玄净魔影 </li>
+               </ul>
+
+           </div>
+        </div>
+    </div>
+    <div id="last">
+        <div id="last_left">
+         <div id="left_top">
+             <ul><li class="list_name">角色扮演</li></ul>
+         </div>
+            <div id="rgp">
+            <form>
+                <table>
+                    <tr>
+                        <td colspan="2"><img src="img/img-6.jpg"></td>
+                        <td colspan="2"><img src="img/img-7.jpg"></td>
+                        <td colspan="2"><img src="img/img-8.jpg"></td>
+                        <td colspan="2"><img src="img/img-9.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="name" align="center">神仙道</td>
+                        <td colspan="2" class="name" align="center">神仙道</td>
+                        <td colspan="2" class="name" align="center">神仙道</td>
+                        <td colspan="2" class="name" align="center">神仙道</td>
+                    </tr>
+                    <tr>
+                    <td>游戏人气：</td><td>1765341</td>
+                    <td>游戏人气：</td><td>1765341</td>
+                    <td>游戏人气：</td><td>1765341</td>
+                    <td>游戏人气：</td><td>1765341</td>
+                    </tr>
+                    <tr>
+                    <td>游戏状态：</td><td>22区开启</td>
+                    <td>游戏状态：</td><td>22区开启</td>
+                    <td>游戏状态：</td><td>22区开启</td>
+                    <td>游戏状态：</td><td>22区开启</td>
+
+                    </tr>
+                    <tr>
+                    <td><img src="img/btn-02.jpg"></td>
+                     <td><img src="img/btn-03.jpg"></td>
+                     <td><img src="img/btn-02.jpg"></td>
+                     <td><img src="img/btn-03.jpg"></td>
+                     <td><img src="img/btn-02.jpg"></td>
+                     <td><img src="img/btn-03.jpg"></td>
+                     <td><img src="img/btn-02.jpg"></td>
+                     <td><img src="img/btn-03.jpg"></td>
+
+
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="img/img-10.jpg"></td>
+                        <td colspan="2"><img src="img/img-11.jpg"></td>
+                        <td colspan="2"><img src="img/img-12.jpg"></td>
+                        <td colspan="2"><img src="img/img-13.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="name" align="center">神仙道</td>
+                        <td colspan="2" class="name" align="center">神仙道</td>
+                        <td colspan="2" class="name" align="center">神仙道</td>
+                        <td colspan="2" class="name" align="center">神仙道</td>
+                    </tr>
+                    <tr>
+                    <td>游戏人气：</td><td>1765341</td>
+                    <td>游戏人气：</td><td>1765341</td>
+                    <td>游戏人气：</td><td>1765341</td>
+                    <td>游戏人气：</td><td>1765341</td>
+                    </tr>
+                    <tr>
+                    <td>游戏状态：</td><td>22区开启</td>
+                    <td>游戏状态：</td><td>22区开启</td>
+                    <td>游戏状态：</td><td>22区开启</td>
+                    <td>游戏状态：</td><td>22区开启</td>
+
+                    </tr>
+                    <tr>
+                    <td><img src="img/btn-02.jpg"></td>
+                     <td><img src="img/btn-03.jpg"></td>
+                     <td><img src="img/btn-02.jpg"></td>
+                     <td><img src="img/btn-03.jpg"></td>
+                     <td><img src="img/btn-02.jpg"></td>
+                     <td><img src="img/btn-03.jpg"></td>
+                     <td><img src="img/btn-02.jpg"></td>
+                     <td><img src="img/btn-03.jpg"></td>
+
+
+
+
+                    </tr>
+
+
+                </table>
+            </form>
+
+            </div>
+
+        </div>
+        <div id="last_right" >
+            <div id="right_top">
+                <ul>
+                    <li style="border-bottom: 1px #ccc dashed ;padding-bottom: 3px;height: 28px;list-style: none"><img src="img/btn-04.gif"> [神仙道]03月05日·玄净魔影 </li>
+                </ul>
+                <ul>
+                    <li style="border-bottom: 1px #ccc dashed ;padding-bottom: 3px;height: 28px;list-style: none"><img src="img/btn-04.gif"> [神仙道]03月05日·玄净魔影 </li>
+                </ul>
+                <ul>
+                    <li style="border-bottom: 1px #ccc dashed ;padding-bottom: 3px;height: 28px;list-style: none"><img src="img/btn-04.gif"> [神仙道]03月05日·玄净魔影 </li>
+                </ul>
+                <ul>
+                    <li style="list-style: none"><img src="img/btn-04.gif"> [神仙道]03月05日·玄净魔影 </li>
+                </ul>
+
+
+            </div>
+            <div id="right_buttom">
+            <div id="all_video">
+                <ul><li class="list_name">全部视频</li></ul>
+            </div>
+            <div id="video">
+            <table>
+                <tr>
+                    <td><img src="img/img-1.jpg"></td><td>《航海之王》麻辣酷炫反穿越，英雄时尚大变身！</td>
+                    
+                </tr>
+                <tr>
+                    <td><img src="img/img-2.jpg"></td><td>《弹弹堂》吴克群同名激情主题mv，体验修真乐趣！</td>
+                </tr>
+            </table>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
