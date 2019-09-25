@@ -1,0 +1,58 @@
+.star{
+    color: red;
+}
+#daohang{
+    height: 50px;
+    width: 1920px;
+    background-color: rgb(59,153,252);
+    border: 1px solid aqua;
+
+}
+ul li{
+    list-style: none;
+    float: left;
+    padding-right: 145px;
+    text-indent: 2em;
+    font-family: 幼圆;
+    color: aliceblue;
+
+}
+li:hover{
+    background-color: blue;
+}
+
+#d1{
+    border-radius: 10px;
+    color: azure;
+    background-color: rgb(33,131,198);
+    height: 50px;
+    width: 1000px;
+    margin: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 幼圆;
+    border: 1px solid blue;
+
+}
+form{
+   margin-top: 20px;
+   border: 2px solid blue;
+    height: 900px;
+    width: 1000px;
+    border-radius: 12px;
+
+}
+
+#user{
+
+    height:800px;
+    padding-top: 50px;
+}
+.ditail{
+    font-size: 5px;
+    color:rgb(255,127,0);
+}
+

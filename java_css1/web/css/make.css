@@ -1,0 +1,49 @@
+/*全局选择器*/
+*{
+    font-family: 幼圆;
+    font: normal bold 30px 幼圆;
+}
+/*标签选择器*/
+p{
+    text-indent: 2em;/*文本缩进*/
+    color: darkgoldenrod;
+    font-size: 50px;
+    font-weight: bold; /*加粗*/
+    font-style: italic; /*倾斜*/
+}
+h1{
+    text-align: center; /*文本位置*/
+    line-height: 10px; /*行高*/
+    text-decoration: underline;/*文本装饰*/
+}
+
+
+div{
+    background-image: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*鼠标未点击*/
+a:link{
+    color: #41ab13;
+}
+/*访问后*/
+a:visited{
+    color: rgb(200,100,60);
+}
+/*鼠标悬浮*/
+a:hover{
+    color: #abc;
+}
+/*鼠标按住左键*/
+a:active{
+    color: black;
+}
+
+p:hover{
+    color: #abc;
+}
+p:active{
+    color: black;
+}
+
