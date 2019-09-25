@@ -6,6 +6,7 @@
 </head>
 <script>
     var mtime ;
+    var b =true;
     function luckyMan() {
          var arr = new Array("郑晓婷",
              "支飞扬",
@@ -44,12 +45,14 @@
     }
 
     function start() {
-       
-        mtime = setInterval("luckyMan()",10);
-
+    if(b) {
+        mtime = setInterval("luckyMan()", 10);
+        b = false;
+    }
     }
     function stop() {
         clearInterval(mtime);
+        b=true;
     }
 </script>
 <body>
