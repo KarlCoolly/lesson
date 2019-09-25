@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window</title>
+</head>
+<body>
+<script>
+    function f(){
+
+        var b = window.confirm("确定跳转吗？");
+         if(b){
+       window.location = "http://www.baidu.com";
+         }
+
+    }
+
+</script>
+        <input type="button" value="搜狐" onclick="window.open('http://www.sohu.com')">
+<input type="button" value="百度" onclick="f()">
+<input type="button" value="重新加载" onclick="window.reload()">
+<input type="button" value="关闭" onclick="window.close()">
+</body>
+</html>

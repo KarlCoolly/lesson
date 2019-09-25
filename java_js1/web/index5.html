@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+
+</head>
+<body>
+<script>
+    var arr = new Array(4);
+    var brr = new Array("banana","apple","orange","watermelon");
+    for (var i=0;i<brr.length;i++){
+        console.log(brr[i]);
+    }
+    // 用分隔符分开
+    console.log(brr.join(':'));
+    // 排序
+    console.log(brr.sort());
+    // 在尾部添加元素
+    brr.push("stawberry");
+    console.log(brr);
+    // 在头部添加元素
+    brr.unshift("pandow");
+    console.log(brr);
+    // 删除头部元素
+    brr.shift();
+    console.log(brr);
+    //以2-4分隔
+    console.log(brr.slice(2,4))
+
+</script>
+</body>
+</html>

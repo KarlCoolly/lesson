@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抽奖页面</title>
+</head>
+<script>
+    var mtime ;
+    function luckyMan() {
+         var arr = new Array("郑晓婷",
+             "支飞扬",
+             "谭育琪",
+             "谢仕林",
+             "王毅龙",
+             "张  正",
+             "余春晖",
+             "赵宏展",
+             "李英男",
+             "谭鸿兴",
+             "王太平",
+             "颜  陆",
+             "乔  霏",
+             "饶成勇",
+             "马  锋",
+             "蒲  翔",
+             "游为量",
+             "朱第明",
+             "康富云",
+             "黄  威",
+             "谭攀飞",
+             "翟帅斌",
+             "余虔诚",
+             "刘鸿俊",
+             "甘英杰",
+             "陈晓翔",
+             "朱微微",
+             "陈嘉浩",
+             "李坚华",
+             "张  宇",
+             "王银生");
+           var n = Math.floor(Math.random()*arr.length);
+         document.getElementById("s").innerText = arr[n];
+
+    }
+
+    function start() {
+       
+        mtime = setInterval("luckyMan()",10);
+
+    }
+    function stop() {
+        clearInterval(mtime);
+    }
+</script>
+<body>
+<div id="mylucky" align="center"style="padding: 30px">
+    <h1 style="color: blue;height: 80px;border: 10px red dashed;width: 540px;line-height: 80px">华为年欢晚会抽奖 一等奖得主</h1>
+
+        <span style="color:red;font-size: 30px;" id="s"></span> <br/>
+
+        <input type="button" value="抽奖开始" onclick="start()">
+    <input type="button" value="抽奖暂停" onclick="stop()">
+
+
+</div>
+</body>
+</html>

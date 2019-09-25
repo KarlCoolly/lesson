@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date</title>
+</head>
+<script>
+    function f() {
+        var  d = new Date();
+        var hh = d.getHours();
+        var dd = d.getDate();
+        var MM = d.getMonth()+1;
+        var mm = d.getMinutes();
+        var ss = d.getSeconds();
+        document.getElementById("myclock").innerHTML = MM+"-"+dd+" "+hh+":"+mm+":"+ss;
+    }
+  // var mtime = setTimeout("f()",1000);
+    var mtime =  setInterval("f()",1000);
+
+   // clearInterval(mtime);
+
+</script>
+<body onload="f()">
+
+<div id="myclock"></div>
+</body>
+</html>
